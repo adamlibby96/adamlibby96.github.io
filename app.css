@@ -1,4 +1,6 @@
 .navBar {
+    background-color: #333;
+    width: 100%;
 
 }
 
@@ -6,4 +8,6 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    display: inline-block;
 }
