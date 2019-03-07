@@ -2,6 +2,29 @@ body {
     background-color: lightgray;
 }
 
+.centerContent {
+    margin: 0 auto;
+}
+.resumeObject {
+    width: 75%;
+    height: 750px;
+    margin-left: 12%;
+    padding: 24px;
+    float: left;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    width: 98%;
+    margin: 0 auto;
+    padding: 4px;
+    height: fit-content;
+    
+}
+
 .profilePicture {
     width: 200px; 
     height: 200px; 
@@ -14,8 +37,9 @@ body {
 .card {
     background-color: white;
     padding: 8px;
+    float: left;
     margin: 4px;
-    width: fit-content;
+    width: 80%;
     
 }
 
