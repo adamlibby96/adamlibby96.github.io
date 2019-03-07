@@ -34,6 +34,13 @@ body {
     padding-right: 18px;
 }
 
+.aboutMe {
+    background-color: white;
+    padding: 8px;
+    margin: 0 auto;
+    width: 80%;
+}
+
 .card {
     background-color: white;
     padding: 8px;
