@@ -1,53 +1,77 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Atlantis</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="app.css">
-    </head>
-    <header>
-        <div class="navBar">
-            <ul class="navList">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a>Contact</a></li>
-                <li><a href="resume.html">R&eacute;sum&eacute;</a></li>
-            </ul>
-        </div>
-    </header>
-    <body>
-        <div class="title">
-            <h2>Lost City of Atlantis</h2>
-        </div>
-        <div >
-            <div class="aboutMe" style="margin: 0 auto; max-width: 800px;" >
-                    <iframe width="100%" height="480" src="https://www.youtube.com/embed/sJ2Is9IPN70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <h4>Assignment</h4>
-                    <p>Create an open, underwater enviornment using Unreal Engine 4.
-                        The theme was a lost city.
-                    </p>
-                    <h4>Goals</h4>
-                    <p>
-                        Become fimilar with the Unreal Engine. <br />
-                        Challenge your creativity. <br />
-                        Add interactivity and flow to the scene. <br />
-                        Tell a story through your environment. <br />
-                        Create a focal point or point of interest. <br />
-                        Push yourself to learn other features.
-                    </p>
-                    <h4>My process</h4>
-                    <p>
-                        I started out with old fashion pencil and paper. I designed the layout of the map and then I started working on the terrain. On of the challenges that I encountered was just placing the art assets in way that looks natural. 
-                        Once I started getting the hang of placing them in a realistic way, I started to work on the player controller. The biggest struggle here was working with UE4 blueprints. I started with the player's movement (forward/backward, left/right). 
-                        Since this is an underwater level, the player's movement had to feel like they were actually swimming. So instead of just moving the character in the direction they press, I actually add a physics force in that direction, and since UE4 provides 
-                        a water volume, the drag force was already applied to the player's movement. <br />
-                        After the movement I did the mouse look. I had two options: rotate the whole player, rotate the head joint. I went with the head joint because I wanted realist head movement. This was surprisingly easy. All I had to do was get a reference to the 
-                        head joint object and then limit the rotation of it. <br />
-                        We were also required to have triggered events. I made 3 trigger events in my scene. The first one was when the player leaves the cave and it triggers a plane's physics to activate and it will fall to the ocean floor. Then my next one was when the player 
-                        is about to enter the main building, a shark will swim out and hopefully scare the player a little. The last one is when the player picks up the golden knife it will trigger the end game cutscene. 
-                    </p>
-            </div>
-        </div>
-    </body>
+  <head>
+    <title>Atlantis</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <header>
+    <div class="navBar">
+      <ul class="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a>Contact</a></li>
+        <li><a href="resume.html">R&eacute;sum&eacute;</a></li>
+      </ul>
+    </div>
+  </header>
+  <body>
+    <div class="title">
+      <h2>Lost City of Atlantis</h2>
+    </div>
+    <div>
+      <div class="aboutMe" style="margin: 0 auto; max-width: 800px;">
+        <iframe
+          width="100%"
+          height="480"
+          src="https://www.youtube.com/embed/sJ2Is9IPN70"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <h4>Assignment</h4>
+        <p>
+          Create an open, underwater enviornment using Unreal Engine 4. The
+          theme: A Lost City.
+        </p>
+        <h4>Goals</h4>
+        <p>
+          Become fimilar with the Unreal Engine. <br />
+          Challenge your creativity. <br />
+          Add interactivity and flow to the scene. <br />
+          Tell a story through your environment. <br />
+          Create a focal point or point of interest. <br />
+          Push yourself to learn other features.
+        </p>
+        <h4>My process</h4>
+        <p>
+          I started out with old fashion pencil and paper. I designed the layout
+          of the map and then I started working on the terrain. On of the
+          challenges that I encountered was just placing the art assets in way
+          that looks natural. Once I started getting the hang of placing them in
+          a realistic way, I started to work on the player controller. The
+          biggest struggle here was working with UE4 blueprints. I started with
+          the player's movement (forward/backward, left/right). Since this is an
+          underwater level, the player's movement had to feel like they were
+          actually swimming. So instead of just moving the character in the
+          direction they press, I actually add a physics force in that
+          direction, and since UE4 provides a water volume, the drag force was
+          already applied to the player's movement. <br />
+          After the movement I did the mouse look. I had two options: rotate the
+          whole player, rotate the head joint. I went with the head joint
+          because I wanted realist head movement. This was surprisingly easy.
+          All I had to do was get a reference to the head joint object and then
+          limit the rotation of it. <br />
+          We were also required to have triggered events. I made 3 trigger
+          events in my scene. The first one was when the player leaves the cave
+          and it triggers a plane's physics to activate and it will fall to the
+          ocean floor. Then my next one was when the player is about to enter
+          the main building, a shark will swim out and hopefully scare the
+          player a little. The last one is when the player picks up the golden
+          knife it will trigger the end game cutscene.
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
