@@ -1,83 +1,89 @@
 body {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 .centerContent {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 .resumeObject {
-    width: 75%;
-    height: 750px;
-    margin-left: 12%;
-    padding: 24px;
-    float: left;
+  width: 75%;
+  height: 750px;
+  margin-left: 12%;
+  padding: 24px;
+  float: left;
+}
+
+.aboutParagraphs {
+  max-width: 800px;
+  font-size: 18px;
+  padding: 14px;
+  padding-bottom: 0px;
 }
 
 .content {
-    width: 98%;
-    margin: 0 auto;
-    padding: 24px;
-    height: fit-content;
-    
+  width: 98%;
+  margin: 0 auto;
+  padding: 24px;
+  height: fit-content;
 }
 
 .profilePicture {
-    width: 200px; 
-    height: 200px; 
-    border-radius: 50%;
-    float: left;
-    padding: 12px;
-    padding-right: 18px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  float: left;
+  margin-top: 48px;
+  margin-right: 18px;
+  margin-left: 18px;
+  margin-bottom: 48px;
 }
 
 .aboutMe {
-    background-color: white;
-    padding: 8px;
-    margin: 0 auto;
-    width: 80%;
+  background-color: white;
+  padding: 8px;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .card {
-    background-color: white;
-    padding: 8px;
-    max-width: 800px;
-    margin: 12px auto;
-    width: 80%;
-    
+  background-color: white;
+  padding: 8px;
+  max-width: 800px;
+  margin: 12px auto;
+  width: 80%;
 }
 
 .navList {
-    width: 100%;
-    background-color: #333;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    
+  width: 100%;
+  background-color: #333;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .navList li {
-    float: left;
+  float: left;
 }
 
 .navList li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 .navList li a:hover {
-    background-color: #111;
-    cursor: pointer;
+  background-color: #111;
+  cursor: pointer;
 }
 
 .activeLink {
-    background-color: darkred;
+  background-color: darkred;
 }
 
 .title {
-    text-align:center;
-    width: 100%;
+  text-align: center;
+  width: 100%;
 }
