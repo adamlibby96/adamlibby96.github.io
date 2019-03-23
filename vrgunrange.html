@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>VRGunrange</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="app.css" />
+    <script>
+      function toggleDiv() {
+        var x = document.getElementById("toggle");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </head>
+  <header>
+    <div class="navBar">
+      <ul class="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="resume.html">R&eacute;sum&eacute;</a></li>
+      </ul>
+    </div>
+  </header>
+  <body>
+    <div class="title">
+      <h2>VR Gunrange</h2>
+    </div>
+    <div>
+      <div class="aboutMe" style="margin: 0 auto; max-width: 800px;">
+        <iframe
+          width="100%"
+          height="480"
+          src="https://www.youtube.com/embed/Vz8cQazdZlg"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <h4>Assignment</h4>
+        <p>
+          Create a Virtual Reality game of your choice, using Unity3d.
+        </p>
+        <h4>Goals</h4>
+        <p>
+          Complete a functional VR Game within Unity3d. <br />
+          Challenge your creativity. <br />
+          Pick a game and develop it using any asset you can find. <br />
+          Challenge yourself to do something you have not done before.
+        </p>
+        <h4>My process</h4>
+        <p>
+          When I first was assigned the project, I wanted to make a realistic
+          game. After some thinking I decided I wanted to do a gunrange; 
+          but not just any gunrange... I wanted to do make a gunrange where the 
+          weapon interaction was as realistic as possible, and use real world 
+          bullet physics as well. After I settled on what game I wanted I 
+          immediately began working on the gun interactions. I started 
+          with an M4A1 and was able to get the gun to pickup and shoot 
+          fairly easily. Then I started working on the magazine functionality and 
+          pulling the slide to cock the gun. I started with a linear 
+          method just to get it to work. Once I completed that, I started 
+          thinking more latterally and settled on the idea of 
+          'my code should work exactly like a real gun.'<br />
+          What I mean by this is: 
+          <ul>
+            <li>
+              The magazine only knows about its current ammo count, how to 
+              put bullets into the mag and how to extract a bullet. 
+            </li>
+            <li>
+              The gun is seperated into a few components, the slide and the gun itself. 
+              <ul>
+                <li>
+                  The gun script holds the functionallity for weapon 
+                  handling and how to pull the trigger. 
+                </li>
+                <li>
+                  The slide knows it's owner (aka the gun) and it 
+                  knows how to pull a bullet from the inserted mag. 
+                </li>
+              </ul>
+            </li>
+            <li>
+              The bullets only know how to be shot. 
+            </li>
+          </ul>
+          <br />
+          So the player can pick up the gun, then when they pull the slide back, 
+          it will try to get a bullet from the magazine and pass it to the gun script. 
+          Then the gun script has a chambered round (a bullet ready to fire). 
+          When the player pulls the trigger, it tells the chambered round to launch its projectile. 
+          And then the bullet fires from the barrel at the correct velocity 
+          and when the bullet hits a collider, it will spawn a bullet hole object, 
+          then depending on if it was wood or metal that it impacted, it makes the correct impact sound. 
+        </p>
+        <button class="ToggleBtn" onClick="toggleDiv()">
+          Toggle Commentary Video
+        </button>
+        <div id="toggle" style="display: none;">
+          <iframe
+            width="100%"
+            height="480"
+            src="https://www.youtube.com/embed/zeC9DYqg_NI"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
