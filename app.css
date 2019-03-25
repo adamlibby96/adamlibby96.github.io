@@ -53,25 +53,36 @@ body {
   width: 80%;
 }
 
-.navList {
+.navBar {
+  /* position: fixed;
+  top: 0; */
   width: 100%;
+  text-align: center;
+}
+
+.navList {
+  
   background-color: #333;
   list-style-type: none;
-  margin: 0;
+  text-align: center;
+  margin: 0 auto;
   padding: 0;
   overflow: hidden;
 }
 
 .navList li {
-  float: left;
+  display: inline-block;
+  
 }
 
 .navList li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 18px;
   text-decoration: none;
+  font-size: 18px;
+  width: 100px;
 }
 
 .navList li a:hover {
