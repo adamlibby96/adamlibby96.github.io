@@ -61,7 +61,6 @@ body {
 }
 
 .navList {
-  
   background-color: #333;
   list-style-type: none;
   text-align: center;
@@ -72,7 +71,6 @@ body {
 
 .navList li {
   display: inline-block;
-  
 }
 
 .navList li a {
@@ -118,4 +116,18 @@ body {
 
 .ToggleBtn:hover {
   background-color: #e7e7e7;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 12px;
+}
+table {
+  margin: 0 auto;
 }
