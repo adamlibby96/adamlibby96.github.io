@@ -56,7 +56,16 @@ body {
   margin: 12px auto;
   width: 80%;
 }
-
+.downloadBtn {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background-color: #333;
+  padding: 12px;
+}
+.downloadBtn:hover {
+  background-color: #111;
+}
 .navBar {
   /* position: fixed;
   top: 0; */
