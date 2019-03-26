@@ -3,7 +3,7 @@ html * {
 }
 
 body {
-  background-color: lightgray;
+  background-color: #BFBFBF;
 }
 
 .centerContent {
@@ -55,6 +55,7 @@ body {
   max-width: 800px;
   margin: 12px auto;
   width: 80%;
+  
 }
 .downloadBtn {
   text-decoration: none;
