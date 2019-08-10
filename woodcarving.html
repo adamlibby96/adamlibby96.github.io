@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Wood Carving</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="app.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <script>
+    function toggleDiv() {
+      var x = document.getElementById("toggle");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.html">R&eacute;sum&eacute;</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+
+  <div class="title">
+    <h2>Wood Carving</h2>
+  </div>
+  <div>
+    <div class="aboutMe" style="margin: 0 auto; max-width: 800px;">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numberText">1 / 9</div>
+          <img src="images/wood_1.jpg" style="width:100%;" />
+        </div>
+        <div class="mySlides fade">
+          <div class="numberText">2 / 9</div>
+          <img src="images/wood_2.jpg" style="width:100%;" />
+        </div>
+        <div class="mySlides fade">
+          <div class="numberText">3 / 9</div>
+          <img src="images/wood_3.jpg" style="width:100%;" />
+        </div>
+        <div class="mySlides fade">
+          <div class="numberText">4 / 9</div>
+          <img src="images/wood_4.jpg" style="width:100%;" />
+        </div>
+        <div class="mySlides fade">
+          <div class="numberText">5 / 9</div>
+          <img src="images/wood_5.jpg" style="width:100%;" />
+        </div>
+        <div class="mySlides fade">
+          <div class="numberText">6 / 9</div>
+          <img src="images/wood_6.jpg" style="width:100%;" />
+        </div>
+        <div class="mySlides fade">
+          <div class="numberText">7 / 9</div>
+          <img src="images/wood_7.jpg" style="width:100%;" />
+        </div>
+        <div class="mySlides fade">
+          <div class="numberText">8 / 9</div>
+          <img src="images/wood_8.jpg" style="width:100%;" />
+        </div>
+        <div class="mySlides fade">
+          <div class="numberText">9 / 9</div>
+          <img src="images/wood_9.jpg" style="width:100%;" />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <br />
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+      </div>
+      <br />
+      <!-- Start description -->
+      <p>
+        Pulling out a fresh block of wood with absolutely 0 idea what to carve is a great way to end the day.
+        Figuring out what I am about to carve is the hardest part of the process. But on the otherhand,
+        the more complex the object is, the harder it is to carve. Which makes it more fun and rewarding.
+        I have been carving since this past summer and I feel like I am getting better with each project.
+        It is one of the best stress relievers that I know of. It takes intense focus because you are dealing with
+        sharp objects. I've already had stitches on my finger once, which has caused me to be more cautious on projects.
+
+      </p>
+
+
+      <!-- end about me div -->
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" ssactive", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " ssactive";
+    }
+  </script>
+</body>
+
+</html>

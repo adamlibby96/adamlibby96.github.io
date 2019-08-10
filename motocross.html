@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Motocross</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="app.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <script>
+    function toggleDiv() {
+      var x = document.getElementById("toggle");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.html">R&eacute;sum&eacute;</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+
+  <div class="title">
+    <h2>Motocross</h2>
+  </div>
+  <div>
+    <div class="aboutMe" style="margin: 0 auto; max-width: 800px;">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numberText">1 / 3</div>
+          <img src="images/motocover.JPG" style="width:100%;" />
+        </div>
+
+
+
+        <div class="mySlides fade">
+          <div class="numberText">2 / 3</div>
+          <img src="images/moto_1.JPG" style="width:100%;" />
+        </div>
+
+
+
+        <div class="mySlides fade">
+          <div class="numberText">3 / 3</div>
+          <img src="images/moto_2.JPG" style="width:100%;" />
+        </div>
+
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <br />
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+      <br />
+      <!-- Start description -->
+      <p>Pull up to the starting gate. Watch the person hold up the 30 second board. They tilt it sideways. They begin
+        to run off the track. Only a few seconds till the gate drops. Engines are roaring. Take one last deep breath.
+        Gate slams down. Let of the clutch and the race has begun. <br />
+        <br />
+        One of the best feelings in the world is nailing the launch at the perfect time. All 30 of us trying to get
+        through the first turn and making it through the carnage. <br />
+        The thing I love most about motocross is the thrill and heart racing moments. I first began riding bikes when I
+        was around 8 years old on my dad's old 50cc bike. After many years on the 50, I upgraded to a 65cc which was
+        twice as fast. <br />
+        Then came the big moment: riding my dad's Kawasaki KX125. Oh the sounds and power this bike has. I competed in
+        my first race with this bike. I will never forget the first gate drop, first tripple, first table top.
+        Everything about motocross is amazing in ways that are indescribable. <br />
+      </p>
+
+
+      <!-- end about me div -->
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" ssactive", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " ssactive";
+    }
+  </script>
+</body>
+
+</html>

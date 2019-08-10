@@ -18,12 +18,14 @@
       }
     }
   </script>
+
 </head>
 
 
 <body>
   <div class="topnav" id="myTopnav">
     <a href="index.html">Home</a>
+    <a href="hobbies.html">Hobbies</a>
     <a class="active" href="about.html">About</a>
     <a href="contact.html">Contact</a>
     <a href="resume.html">R&eacute;sum&eacute;</a>
@@ -42,40 +44,97 @@
       <img src="images/infographic.png" width="100%" />
       <img class="profilePicture" src="images/ProfilePicture.jpg" />
       <p class="aboutParagraphs" id="surroundImage">
-        &nbsp;&nbsp;&nbsp;&nbsp;My name is Adam Libby, I am currently a senior
-        at Oklahoma Christian University in Edmond, OK. I am majoring in
-        Computer Science and minoring in Gaming and Animation. The plan is to
-        graduate in December of 2019. <br /><br />
-        &nbsp;&nbsp;&nbsp;&nbsp;I discovered my love for programming during my
-        senior year in highschool while attending a technical college for
-        networking. My professor gave us two weeks to complete a small program
-        in Java. This lead me to creating a replica of Snake. Obviously being
-        my first time programming, it was the buggiest code I have ever seen.
-        But nonetheless, I loved starting with an empty file and writing some
-        lines of code and watching the project come alive.<br /><br />
+        <h3>Brief Description</h3>
+        &nbsp;&nbsp;&nbsp;&nbsp;Hello! I'm Adam Libby. I have a love for technology, the great outdoors, and gaming.
+        If I am not on my computer, I am either fishing or wood carving. I have a passion for learning and helping
+        people.
+        <br /><br /><br /><br /><br /><br /><br /><br />
       </p>
-      <p class="aboutParagraphs">
-        &nbsp;&nbsp;&nbsp;&nbsp;Studying here at OC I have discovered that I
-        really enjoy programming in Unity3d with C#. I started out with making
-        a knock-off of an old TV series American Gladiators. I have recently
-        found the love for developing VR games. While I enjoy spending time
-        programming and playing video games, I love spending as much time as I
-        can outdoors.<br /><br />
-        &nbsp;&nbsp;&nbsp;&nbsp;I enjoy going camping, riding motorcycles, and
-        taking my /*derpy*/ husky, Luna, on runs. In Boy Scouts we always went
-        camping. Every month we had a camping trip or some other activity.
-        <br /><br />
-        &nbsp;&nbsp;&nbsp;&nbsp;I was elected Crew Chief for a high-adventure
-        camp called Philmont. As Crew Chief I led a twelve-man crew on a
-        111-mile backpacking trek. That trip was easily one of my greatest
-        accomplishments. After Philmont, I put together my Eagle project at
-        our local ASPCA. Our job was to clean out their backyard/junkyard, mow
-        and weed eat, and build a few shelves for storage. My team and I put
-        well over 150 man-hours completing this project. I achieved my Eagle
-        Scout rank in 2014.
-      </p>
+      <button class="accordion">Background</button>
+      <div class="panel">
+        <p class="aboutParagraphs">
+          &nbsp;&nbsp;&nbsp;&nbsp;I was born in Midland, Texas, then quickly moved to Houston. After spending several
+          years there, my dad moved us to a small town called Bartlesville, Oklahoma.
+          I have spent most of my life in Bartlesville. I have a fantastic family: Mom, Dad, and 3 brothers - 2 older, 1
+          younger. I followed my fathers footsteps and tried to race motorcycles, but school ended up taking over.
+          I had an active childhood, especially with my 3 brothers in the house. We used to spend hours and hours
+          outside. I am thankful that I have such an amazing and caring family.
+        </p>
+      </div>
+      <button class="accordion">School</button>
+      <div class="panel">
+        <p class="aboutParagraphs">
+          &nbsp;&nbsp;&nbsp;&nbsp;I attended high school in Bartlesville, OK. While I was
+          there, I had the opportunity to attend a local trade school where I graduated with a certificate in
+          Netwroking. I then moved on to college: Oklahoma Christian University (OC). Due to my time at tech school, I
+          knew exactly what I wanted to do as a career: programming. I signed up for Computer Science at OC, and am now
+          a senior majoring in Computer Science and minoring in Gaming and Animation. The plan is to
+          graduate in December of 2019.
+        </p>
+      </div>
+
+      <button class="accordion">Why Programming?</button>
+      <div class="panel">
+        <p class="aboutParagraphs">
+          &nbsp;&nbsp;&nbsp;&nbsp;I discovered my love for programming during my
+          senior year in highschool while attending a technical college for
+          networking. My professor gave us two weeks to complete a small program
+          in Java. This lead me to creating a replica of Snake. Obviously being
+          my first time programming, it was the buggiest code I have ever seen.
+          But nonetheless, I loved starting with an empty file and writing some
+          lines of code and watching the project come alive.<br /><br />
+          &nbsp;&nbsp;&nbsp;&nbsp;Studying here at OC I have discovered that I
+          really enjoy programming in Unity3d with C#. I started out with making
+          a knock-off of an old TV series American Gladiators. I have recently
+          found the love for developing VR games. While I enjoy spending time
+          programming and playing video games, I love spending as much time as I
+          can outdoors.
+        </p>
+      </div>
+      <button class="accordion">Outdoor Enthusiast</button>
+      <div class="panel">
+        <p class="aboutParagraphs">
+          &nbsp;&nbsp;&nbsp;&nbsp;I enjoy going camping, riding motorcycles, and
+          taking my /*derpy*/ husky, Luna, on runs. I received my love for camping from my Scouting Career.
+          I also picked up racing motorcycles from my father. This past summer my father took me fishing and I instantly
+          fell inlove with it. I also enjoy wood carving, especially around a campfire.
+          <br /><br />
+        </p>
+      </div>
+      <button class="accordion">My Scouting Career</button>
+      <div class="panel">
+        <p>
+          &nbsp;&nbsp;&nbsp;&nbsp;I was elected Crew Chief for a high-adventure
+          camp called Philmont. As Crew Chief I led a twelve-man crew on a
+          111-mile backpacking trek. That trip was easily one of my greatest
+          accomplishments. After Philmont, I put together my Eagle project at
+          our local ASPCA. Our job was to clean out their backyard/junkyard, mow
+          and weed eat, and build a few shelves for storage. My team and I put
+          well over 150 man-hours completing this project. I achieved my Eagle
+          Scout rank in 2014.
+        </p>
+      </div>
     </div>
   </div>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("isActive");
+
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>
