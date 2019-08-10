@@ -1,68 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="app.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
-  </head>
-  <header>
-    <div class="navBar">
-      <ul class="navList">
-        <li><a class="activeLink" href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="resume.html">R&eacute;sum&eacute;</a></li>
-      </ul>
+
+<head>
+  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="app.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</head>
+
+
+
+<body>
+  <!-- <div class="topnav" id="myTopnav">
+    <ul class="navList">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="resume.html">R&eacute;sum&eacute;</a></li>
+    </ul>
+  </div> -->
+  <div class="topnav" id="myTopnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.html">R&eacute;sum&eacute;</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="content">
+    <div class="card" style="margin-top: 0;">
+      <a href="atlantis.html" style="text-decoration: none; color: black;">
+        <img src="images/AtlantisImage.PNG" width="100%" height="auto" />
+        <h3>Lost City of Atlantis</h3>
+        <p>
+          The assignment was to create an open, underwater enviornment using
+          Unreal Engine 4. The theme was a lost city. This was a fun and
+          challenging project that challenged my 'art side' of game
+          development. <strong>Click to see more details.</strong>
+        </p>
+      </a>
     </div>
-  </header>
 
-  <body>
-    
-    <div class="content">
-      <div class="card" style="margin-top: 0;">
-        <a href="atlantis.html" style="text-decoration: none; color: black;">
-          <img src="images/AtlantisImage.PNG" width="100%" height="auto" />
-          <h3>Lost City of Atlantis</h3>
-          <p>
-            The assignment was to create an open, underwater enviornment using
-            Unreal Engine 4. The theme was a lost city. This was a fun and
-            challenging project that challenged my 'art side' of game
-            development. <strong>Click to see more details.</strong>
-          </p>
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="vrbball.html" style="text-decoration: none; color: black;">
-          <img src="images/VRBBALL.PNG" width="100%" height="auto" />
-          <h3>VR Basketball</h3>
-          <p>
-            The assignment was to replicate the OKC Thunder stadium and make a
-            VR Basketball game using Unreal Engine 4. I was on a team of 5
-            people, 4 artists and 1 programmer (me). This project was
-            challenging because this was my first time developing in UE4.
-            <strong>Click to see more details.</strong>
-          </p>
-        </a>
-      </div>
-
-      <div class="card">
-        <a href="vrgunrange.html" style="text-decoration: none; color: black;">
-          <img src="images/VRGunrange.PNG" width="100%" height="auto" />
-          <h3>VR Gunrange</h3>
-          <p>
-            The assignment was to make a VR game in Unity3d. This was a (mostly)
-            solo project and I was given free choice on what to create. I
-            decided on a VR Gunrange.
-            <strong>Click to see more details.</strong>
-          </p>
-        </a>
-      </div>
+    <div class="card">
+      <a href="vrbball.html" style="text-decoration: none; color: black;">
+        <img src="images/VRBBALL.PNG" width="100%" height="auto" />
+        <h3>VR Basketball</h3>
+        <p>
+          The assignment was to replicate the OKC Thunder stadium and make a
+          VR Basketball game using Unreal Engine 4. I was on a team of 5
+          people, 4 artists and 1 programmer (me). This project was
+          challenging because this was my first time developing in UE4.
+          <strong>Click to see more details.</strong>
+        </p>
+      </a>
     </div>
-  </body>
+
+    <div class="card">
+      <a href="vrgunrange.html" style="text-decoration: none; color: black;">
+        <img src="images/VRGunrange.PNG" width="100%" height="auto" />
+        <h3>VR Gunrange</h3>
+        <p>
+          The assignment was to make a VR game in Unity3d. This was a (mostly)
+          solo project and I was given free choice on what to create. I
+          decided on a VR Gunrange.
+          <strong>Click to see more details.</strong>
+        </p>
+      </a>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
 </html>

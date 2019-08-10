@@ -9,6 +9,7 @@ body {
 .centerContent {
   margin: 0 auto;
 }
+
 .resumeObject {
   width: 75%;
   height: 750px;
@@ -24,8 +25,12 @@ body {
   padding-bottom: 0px;
 }
 
+#surroundImage {
+  margin-left: 218px;
+}
+
 .content {
-  width: 98%;
+
   margin: 0 auto;
   padding: 24px;
   height: fit-content;
@@ -34,7 +39,6 @@ body {
 .profilePicture {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   float: left;
   margin-top: 48px;
   margin-right: 18px;
@@ -55,8 +59,9 @@ body {
   max-width: 800px;
   margin: 12px auto;
   width: 80%;
-  
+
 }
+
 .downloadBtn {
   text-decoration: none;
   text-align: center;
@@ -64,47 +69,80 @@ body {
   background-color: #333;
   padding: 12px;
 }
+
 .downloadBtn:hover {
   background-color: #111;
 }
-.navBar {
-  /* position: fixed;
-  top: 0; */
-  width: 100%;
-  text-align: center;
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
 
-.navList {
-  background-color: #333;
-  list-style-type: none;
+.topnav a {
+
+  display: inline-block;
   text-align: center;
   margin: 0 auto;
-  padding: 0;
-  overflow: hidden;
-}
-
-.navList li {
-  display: inline-block;
-}
-
-.navList li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 18px;
+  padding: 14px 16px;
+  font-size: 17px;
   text-decoration: none;
-  font-size: 18px;
-  width: 100px;
+  color: white;
 }
 
-.navList li a:hover {
+.topnav a:hover {
   background-color: #111;
   cursor: pointer;
 }
 
-.activeLink {
+.topnav a.active {
   background-color: darkred;
 }
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  #surroundImage {
+    margin-left: 0;
+  }
+
+  .profilePicture {
+    float: none;
+    margin: auto auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
 
 .title {
   text-align: center;
@@ -123,7 +161,8 @@ body {
   margin: 4px 2px;
   width: 100%;
   border-radius: 12px;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -138,10 +177,44 @@ td {
   border: 1px solid black;
   border-collapse: collapse;
 }
+
 th,
 td {
   padding: 12px;
 }
+
 table {
+  margin: auto auto;
+}
+
+form {
+  display: inline-block;
+  margin: auto auto;
+  text-align: left;
+  width: 80%;
+}
+
+
+
+fieldset {
+  border: none;
+  display: inline-block;
+  width: 100%;
+}
+
+fieldset input,
+fieldset textarea {
+  width: 100%;
+}
+
+#submitButton {
+  display: block;
   margin: 0 auto;
+  width: 50%;
+}
+
+.center {
+  display: block;
+  text-align: center;
+
 }

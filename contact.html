@@ -1,56 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Contact</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="app.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-  </head>
-  <header>
-    <div class="navBar">
-      <ul class="navList">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" class="activeLink">Contact</a></li>
-        <li><a href="resume.html">R&eacute;sum&eacute;</a></li>
-      </ul>
-    </div>
-  </header>
-  <body>
-    <br />
-    <div>
-      <div class="aboutMe" style="margin: 0 auto; max-width: 800px;">
-        
-        <p class="aboutParagraphs" style="width: 100%; text-align: center;">
-         Email: adamlibby96@gmail.com 
-         <br />
-         Cell Phone: (918) 977 - 0546
-         <br />
-         <br />
-         My Phone hours: 
-         <table>
-           <tr>
-             <th>Sun</th>
-             <th>Mon</th>
-             <th>Tue</th>
-             <th>Wed</th>
-             <th>Thu</th>
-             <th>Fri</th>
-             <th>Sat</th>
-            </tr>
-            <tr>
-              <td>All Day</td>
-              <td>After 3pm</td>
-              <td>Before 3pm</td>
-              <td>After 3pm</td>
-              <td>Before 3pm <br />& After 5pm</td>
-              <td>After 3pm</td>
-              <td>All Day</td>
-            </tr>
-         </table>
-         <!-- <form action="mailto:adamlibby96@gmail.com" method="post" enctype="text/plain">
+<head>
+  <title>Contact</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="app.css" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a class="active" href="contact.html">Contact</a>
+    <a href="resume.html">R&eacute;sum&eacute;</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <br />
+  <div>
+    <div class="aboutMe" style="margin: 0 auto; max-width: 800px;">
+
+      <p class="aboutParagraphs" style="width: 100%; text-align: center;">
+        Email: adamlibby96@gmail.com
+        <br />
+        Cell Phone: (918) 977 - 0546
+        <br />
+        <br />
+        <div class="center">
+
+          <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+            action="https://formspree.io/adamlibby96@gmail.com" method="post">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Full Name</label> <br />
+              <input type="text" name="name" id="full-name" placeholder="First and Last" required=""><br />
+              <label for="email-address">Email Address</label><br />
+              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required=""><br />
+              <label for="message">Message</label><br />
+              <textarea rows="5" name="message" id="message" placeholder="Enter Message" required=""></textarea><br />
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+              <input id="submitButton" type="submit" value="Submit">
+            </fieldset>
+          </form>
+        </div>
+        <!-- My Phone hours:
+        <table>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+          <tr>
+            <td>All Day</td>
+            <td>After 3pm</td>
+            <td>Before 3pm</td>
+            <td>After 3pm</td>
+            <td>Before 3pm <br />& After 5pm</td>
+            <td>After 3pm</td>
+            <td>All Day</td>
+          </tr>
+        </table> -->
+        <!-- <form action="mailto:adamlibby96@gmail.com" method="post" enctype="text/plain">
           Name:<br>
           <input type="text" name="name"><br>
           E-mail:<br>
@@ -60,8 +87,9 @@
           <input type="submit" value="Send">
           <input type="reset" value="Reset">
           </form> -->
-        </p>
-      </div>
+      </p>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
