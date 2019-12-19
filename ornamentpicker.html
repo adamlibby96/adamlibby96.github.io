@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ornament Picker</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="app.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  </head>
+
+  <body>
+    <div class="card">
+      <label>Who are you?</label>
+      <select id="familylist" name="name">
+        <option value="dad">Dad</option>
+        <option value="mom">Mom</option>
+        <option value="luke">Luke</option>
+        <option value="adam">Adam</option>
+        <option value="jacob">Jacob</option>
+      </select>
+      <button onclick="onRegisterClicked()">Register</button>
+      <br />
+      <p id="chosenList"></p>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-database.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyAiJBB55_r2DMWtlh_0ubyslTOWl1XoFJk",
+        authDomain: "ornamentpicker.firebaseapp.com",
+        databaseURL: "https://ornamentpicker.firebaseio.com",
+        projectId: "ornamentpicker",
+        storageBucket: "ornamentpicker.appspot.com",
+        messagingSenderId: "987332810630",
+        appId: "1:987332810630:web:b63efa1b7802d7d56b3e07"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="picker.js"></script>
+  </body>
+</html>
